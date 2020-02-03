@@ -19,17 +19,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   http_response_code(201);
   echo json_encode(["data" => ["message" => $message, "username" => $username]]);
 
-} else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-
-  // New Features Go Here
-
-  if (isset($_POST['username'])) {
-    $username = $_POST['username'];
-    $squeaks = getAllSqueaks($username);
-    echo json_encode(["data" => $squeaks]);
-    
-  }
-
-  $squeaks = getAllSqueaks();
-  echo json_encode(["data" => $squeaks]);
-}
+} 

@@ -17,19 +17,7 @@
 <body>
 
   <div class="page-container">
-    <div class="filter-squeaks-container card">
-      <form id="filter-squeaks-form">
-      <select name="order">
-        <option value="" disabled selected>Order By</option>
-        <option value="1">Newest First</option>
-        <option value="2">Oldest First</option>
-        <option value="3">Alphabetically</option>
-      </select>
-      <input type="text" name="username" placeholder="username">
-      <button class="waves-effect waves-light btn" placeholder="message">Filter<i class="material-icons left">cloud</i></button>
-      </form>
-    </div>
-
+    
     <div class="all-squeaks-container">
       <main class="all-squeaks">
 
